@@ -1,0 +1,59 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{float}
+\floatstyle{boxed}
+
+\graphicspath{ {\VAR{path}} }
+
+\title{STAT 4705 Extra Credit}
+\author{Jose Canahui}
+\date{December 2017}
+
+\begin{document}
+
+\maketitle
+
+\section{Iris Data Analysis}
+\subsection{Descriptive Statistics}
+The iris data consists of 150 different measurements of sepal width. Below is the analysis of that data:
+
+\begin{equation}
+\begin{split}
+  \bar{x} &= \VAR{mean}\\
+  s^2 &= \VAR{var}\\
+  s &= \VAR{std}\\
+  M &= \VAR{median}\\
+  Q_1 &= \VAR{q1}\\
+  Q_3 &= \VAR{q3}
+\end{split}
+\end{equation}
+
+\subsection{Graphs}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=.6]{histogram}
+\caption{Histogram of the sepal widths.}
+\label{fig:histogram}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=.6]{boxplot}
+\caption{As you can see, this is the boxplot with the mean, Q1, and Q3 at \VAR{mean}, \VAR{q1}, and \VAR{q3} respectively.}
+\label{fig:boxplot}
+\end{figure}
+
+\subsection{Normality}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=.35]{qqnorm}
+\caption{The trend shows that the the set of data does fir a normal distribution.}
+\label{fig:norm}
+\end{figure}
+
+
+\end{document}
